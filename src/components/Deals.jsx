@@ -1,16 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
-import redlogo from "../assets/images/png/tyrelogo.png";
-import pvcusLogo from "../assets/images/png/tyrelogo.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Logodata } from "./Common/Helper";
 
 const Deals = () => {
   const settingsToRight = {
     dots: false,
     infinite: true,
     speed: 2500,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1,
@@ -49,28 +48,25 @@ const Deals = () => {
     ],
   };
 
-  const settingsToLeft = {
-    ...settingsToRight,
-    rtl: true,
-  };
-
-  const logos = new Array(14).fill(redlogo);
-  const pvcusLogos = new Array(14).fill(pvcusLogo);
-
   return (
     <div className="mx-2">
-      <div className="max-w-full  mx-auto text-center shadow-md p-4 my-4  bg-white rounded-sm  ">
-        <p className="text-3xl mb-4">Our Technology Partners</p>
-        <div className="mb-8">
+      <div className="max-w-full mx-auto text-center shadow-md p-4 my-4 bg-white rounded-sm ">
+        <p className="text-start font-bold mb-0">Deals in</p>
+        <div className="mt-4 flex items-center">
           <Slider {...settingsToRight} className="slider">
-            {logos.map((logo, index) => (
-              <div key={index} className="px-2">
+            {Logodata.map((logo, index) => (<>
+              <div
+                key={index}
+                className="flex flex-col  justify-center items-center min-w-[186px] max-w-[186px] min-h-[86px] max-h-[86px]  shadow-xl mb-4  bg-white border mx-2 rounded-md"
+              >
                 <img
-                  src={logo}
+                  src={logo.image}
                   alt={`partner-logo-${index}`}
-                  className="mx-auto max-w-20 sm:max-w-24 md:max-w-28 lg:max-w-32"
+                  className="mx-auto max-w-[135px] max-h-[35px] min-w-[135px] min-h-[35px] object-contain "
                 />
+                 <p className="mb-0 mt-2 text-sm text-[#130f268a]">{logo.name}</p>
               </div>
+              </>
             ))}
           </Slider>
         </div>
