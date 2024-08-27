@@ -35,9 +35,9 @@ const Header = () => {
           </div>
           <div className="w-full hidden lg:block">
             <ul className="flex gap-7 lg:px-6">
-              <li className="whitespace-nowrap  cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
+              <li className="whitespace-nowrap cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
                 <li
-                  className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
+                  className={` whitespace-nowrap font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
                     loaction.pathname === "/search"
                       ? "text-[#ed1c24] "
                       : "text-[#130F26]"
@@ -47,49 +47,130 @@ const Header = () => {
                     Car Tyres
                   </Link>
                 </li>
-                <ul className="hidden group-hover:block absolute right-0  origin-top-right divide-y divide-gray-100 rounded-b-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                <ul className="hidden group-hover:block absolute left-0 z-10  origin-top-right divide-y divide-gray-100 rounded-xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2  hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="blog"
                       to="/blog"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out w-full `}
                     >
-                      Blogs
+                      MRF Tyres
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="fact"
                       to="/fact"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Facts
+                      CEAT Tyres
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="about us"
                       to="/about-us"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      About us
+                      Goodyear Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out`}
+                    >
+                      Apollo Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out`}
+                    >
+                      Bridgestone Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      JK Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Michelin Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out`}
+                    >
+                      All car Tyres
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="whitespace-nowrap  cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
+              <li className="whitespace-nowrap cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
                 <li
                   className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
                     loaction.pathname === "/how-it-work"
@@ -101,51 +182,132 @@ const Header = () => {
                     Bike Tyres
                   </Link>
                 </li>
-                <ul className="hidden group-hover:block absolute right-0  origin-top-right divide-y divide-gray-100 rounded-b-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                <ul className="hidden group-hover:block absolute left-0 z-10  origin-top-right divide-y divide-gray-100 rounded-xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="blog"
                       to="/blog"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out`}
                     >
-                      Blogs
+                      MRF Tyres
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="fact"
                       to="/fact"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Facts
+                      CEAT Tyres
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="about us"
                       to="/about-us"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      About us
+                      Apollo Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Bridgestone Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      JK Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Michelin Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Pirelli Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap  font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      All bike Tyres
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="whitespace-nowrap  cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
+              <li className="whitespace-nowrap cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
                 <li
-                  className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
+                  className={` whitespace-nowrap font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
                     loaction.pathname === "/security"
                       ? "text-[#ed1c24] "
                       : "text-[#130f26]"
@@ -155,51 +317,10 @@ const Header = () => {
                     Tyre Pressure
                   </Link>
                 </li>
-                <ul className="hidden group-hover:block absolute right-0  origin-top-right divide-y divide-gray-100 rounded-b-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
-                    <Link
-                      aria-label="blog"
-                      to="/blog"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
-                    >
-                      Blogs
-                    </Link>
-                  </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
-                    <Link
-                      aria-label="fact"
-                      to="/fact"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
-                    >
-                      Facts
-                    </Link>
-                  </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
-                    <Link
-                      aria-label="about us"
-                      to="/about-us"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
-                    >
-                      About us
-                    </Link>
-                  </li>
-                </ul>
               </li>
-              <li className="whitespace-nowrap  cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
+              <li className="whitespace-nowrap cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
                 <li
-                  className={`whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out${
+                  className={`whitespace-nowrap font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out${
                     loaction.pathname === "/contact-us"
                       ? "text-[#ed1c24] "
                       : "text-[#130f26]"
@@ -209,51 +330,27 @@ const Header = () => {
                     Commercial Tyres
                   </Link>
                 </li>
-                <ul className="hidden group-hover:block absolute right-0  origin-top-right divide-y divide-gray-100 rounded-b-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                <ul className="hidden group-hover:block absolute left-0 z-10  origin-top-right divide-y divide-gray-100 rounded-xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="blog"
                       to="/blog"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Blogs
-                    </Link>
-                  </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
-                    <Link
-                      aria-label="fact"
-                      to="/fact"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
-                    >
-                      Facts
-                    </Link>
-                  </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
-                    <Link
-                      aria-label="about us"
-                      to="/about-us"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
-                    >
-                      About us
+                      All Commercial Tyres
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="whitespace-nowrap  cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
+              <li className="whitespace-nowrap cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
                 <li
-                  className={`whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out${
+                  className={`whitespace-nowrap font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out${
                     loaction.pathname === "/contact-us"
                       ? "text-[#ed1c24] "
                       : "text-[#130f26]"
@@ -263,51 +360,57 @@ const Header = () => {
                     Accessories
                   </Link>
                 </li>
-                <ul className="hidden group-hover:block absolute right-0  origin-top-right divide-y divide-gray-100 rounded-b-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                <ul className="hidden group-hover:block absolute left-0 z-10  origin-top-right divide-y divide-gray-100 rounded-xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="blog"
                       to="/blog"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Blogs
+                      Accessories
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="fact"
                       to="/fact"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Facts
+                      Batteries
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="about us"
                       to="/about-us"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      About us
+                      Alloys Wheels
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="whitespace-nowrap  cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
+              <li className="whitespace-nowrap cursor-pointer relative transition-ease-in-out after:duration-300 hover:text-black group">
                 <li
-                  className={`whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out${
+                  className={`whitespace-nowrap font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out${
                     loaction.pathname === "/contact-us"
                       ? "text-[#ed1c24] "
                       : "text-[#130f26]"
@@ -317,44 +420,95 @@ const Header = () => {
                     More
                   </Link>
                 </li>
-                <ul className="hidden group-hover:block absolute right-0  origin-top-right divide-y divide-gray-100 rounded-b-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                <ul className="hidden group-hover:block absolute left-0 z-10 origin-top-right divide-y divide-gray-100 rounded-xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none flex flex-col">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="blog"
                       to="/blog"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Blogs
+                      CashBack Offer
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="fact"
                       to="/fact"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      Facts
+                      Find Tyre Dealers
                     </Link>
                   </li>
-                  <li className="ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2">
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
                     <Link
                       aria-label="about us"
                       to="/about-us"
-                      className={` whitespace-nowrap  font-semibold cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out ${
-                        loaction.pathname === "/search"
-                          ? "text-[#ed1c24] "
-                          : "text-[#130F26]"
-                      }`}
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
                     >
-                      About us
+                      Compare Tyres
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Are you a Tyre Dealer
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Wheel balancing
+                    </Link>
+                  </li>
+                  <li
+                    className={`ps-4 w-full pr-10 py-2 rounded-b-md border-0 p-2 hover:text-[#ed1c24] ${
+                      loaction.pathname === "/search"
+                        ? "text-[#ed1c24] "
+                        : "text-[#130F26]"
+                    }`}
+                  >
+                    <Link
+                      aria-label="about us"
+                      to="/about-us"
+                      className={` whitespace-nowrap font-medium cursor-pointer hover:text-[#ed1c24] duration-300 ease-in-out `}
+                    >
+                      Wheel Alignment
                     </Link>
                   </li>
                 </ul>
