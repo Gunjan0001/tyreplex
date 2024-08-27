@@ -7,9 +7,9 @@ import Questions from './components/Questions';
 import Services from './components/Services';
 function App() {
   return (
-    <div className='bg-[#f8f8fa] overflow-hidden'>
+    <div className='bg-[#f8f8fa] overflow-clip'>
       <Header/>
-      {/* <Tyres /> */}
+      <Tyres />
       <Deals />
       <Services />
       <Questions />

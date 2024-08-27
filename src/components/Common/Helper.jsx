@@ -63,3 +63,62 @@ export const ServiceData = [
   { image: wheelalignment, para: "Wheel Balancing" },
 ];
 
+
+export const tyresArray = [
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: "apollo",
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+];
