@@ -32,7 +32,21 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* slick css */
+
+.slick-dots li button:before {
+
+  font-size: 12px !important;
+  color: #ed1c24 !important;
+}
+
+
+.slick-dots li {
+  margin: 0 !important;
 }
