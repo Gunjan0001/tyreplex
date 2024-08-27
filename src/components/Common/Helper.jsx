@@ -1,3 +1,10 @@
+import mrflogo from "../../assets/images/png/mrf.png";
+import apollo from "../../assets/images/png/appolo.png";
+import ceat from "../../assets/images/png/ceat.png";
+import goodtyre from "../../assets/images/png/goodtyre.png";
+import bridgestone from "../../assets/images/png/bridgeStone.png";
+import wheel from "../../assets/images/png/wheel.png";
+import wheelalignment from "../../assets/images/png/wheel-alignment.png";
 export const dropdownData = [
   {
     title: "MOVIES",
@@ -33,24 +40,29 @@ export const dropdownData = [
       },
     ],
   },
-  // {
-  //   title: "MY ACCOUNT",
-  //   subTitle: [
-  //     {
-  //       title: "NEW Release",
-  //       link: "",
-  //     },
-  //     {
-  //       title: "Trending",
-  //       link: "trending",
-  //     },
-  //     {
-  //       title: "Top 50",
-  //       link: "",
-  //     },
-  //   ],
-  // },
 ];
+export const Logodata = [
+  { image: mrflogo, name: "MRF" },
+  { image: apollo, name: "Apollo" },
+  { image: ceat, name: "CEAT" },
+  { image: goodtyre, name: "Good Year" },
+  { image: bridgestone, name: "Bridgestone" },
+  { image: mrflogo, name: "MRF" },
+  { image: apollo, name: "Apollo" },
+  { image: ceat, name: "CEAT" },
+  { image: goodtyre, name: "Good Year" },
+  { image: bridgestone, name: "Bridgestone" },
+  { image: mrflogo, name: "MRF" },
+  { image: apollo, name: "Apollo" },
+  { image: ceat, name: "CEAT" },
+  { image: goodtyre, name: "Good Year" },
+  { image: bridgestone, name: "Bridgestone" },
+];
+export const ServiceData = [
+  { image: wheel, para: "Wheel Balancing" },
+  { image: wheelalignment, para: "Wheel Balancing" },
+];
+
 
 export const tyresArray = [
   {

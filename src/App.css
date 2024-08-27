@@ -38,6 +38,7 @@
   }
 }
 
+
 /* slick css */
 
 .slick-dots li button:before {
@@ -48,5 +49,4 @@
 
 
 .slick-dots li {
-  margin: 0 !important;
-}
+  margin: 0 !important;}
