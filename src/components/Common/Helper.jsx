@@ -61,6 +61,10 @@ export const Logodata = [
 export const ServiceData = [
   { image: wheel, para: "Wheel Balancing" },
   { image: wheelalignment, para: "Wheel Balancing" },
+  { image: wheel, para: "Wheel Balancing" },
+  { image: wheelalignment, para: "Wheel Balancing" },
+  { image: wheel, para: "Wheel Balancing" },
+  { image: wheelalignment, para: "Wheel Balancing" },
 ];
 
 

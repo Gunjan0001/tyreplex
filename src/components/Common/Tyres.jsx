@@ -26,7 +26,7 @@ const Tyres = () => {
     ],
   };
   return (
-    <div className="container mx-auto mt-4">
+    <div className="max-w-[1320px] mx-auto px-6">
       <Slider {...settings}>
         {tyresArray.map((items, index) => {
           return (
