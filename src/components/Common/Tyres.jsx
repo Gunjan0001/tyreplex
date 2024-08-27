@@ -15,7 +15,6 @@ const Tyres = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-         
         },
       },
       {
@@ -35,7 +34,7 @@ const Tyres = () => {
               <div className="border-0 mb-4 relative hover:shadow-2xl duration-300 shadow-md rounded-md bg-white overflow-hidden">
                 <div className="flex items-end justify-end absolute end-0 top-0">
                   <p className="flex items-center justify-end bg-[#efe775] text-sm rounded-sm px-1 before:bg-contain before:bg-center before:mr-1 before:w-[13px] before:h-[16px] before:content-[''] before:bg-warranty">
-                    5 Year Warranty
+                    {items.warrenty}
                   </p>
                 </div>
                 <img
@@ -44,12 +43,14 @@ const Tyres = () => {
                   alt="tyre"
                 />
                 <h2 className="font-extrabold  text-[#372a74] text-3xl px-2">
-                  apollo
+                  {items.brand}
                 </h2>
                 <p className="text-[#130F26] px-2 text-md mt-1">
                   AMAZER 4G LIFE
                 </p>
-                <p className="text-[#130f268a] px-2 text-md py-3">145/80 R12</p>
+                <p className="text-[#130f268a] px-2 text-md py-3">
+                  {items.vName}
+                </p>
                 <div className="flex items-center px-2 gap-3">
                   <div className="bg-[#4CA72C]  text-white px-[5px] rounded-sm inline-flex items-center h-[15px]">
                     4
@@ -61,8 +62,7 @@ const Tyres = () => {
                   Offer available
                 </p>
                 <p className="text-[#130f268a] text-xs mb-0 pb-4 px-2">
-                  {" "}
-                  Tube Type{" "}
+                  {items.tubeType}
                 </p>
               </div>
             </div>
