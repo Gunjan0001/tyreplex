@@ -1,3 +1,5 @@
+
+import  heroLeftImage1 from "../../assets/images/png/tyrelogo.png"
 export const dropdownData = [
     {
       title: "MOVIES",
@@ -33,21 +35,43 @@ export const dropdownData = [
         },
       ],
     },
-    // {
-    //   title: "MY ACCOUNT",
-    //   subTitle: [
-    //     {
-    //       title: "NEW Release",
-    //       link: "",
-    //     },
-    //     {
-    //       title: "Trending",
-    //       link: "trending",
-    //     },
-    //     {
-    //       title: "Top 50",
-    //       link: "",
-    //     },
-    //   ],
-    // },
+    
+  ];
+  export const homeHeroLeftSlider = [
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
+    {
+      image: heroLeftImage1,
+    },
   ];
