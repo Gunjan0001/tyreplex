@@ -49,7 +49,7 @@ const Deals = () => {
   };
 
   return (
-    <div className="mx-2">
+    <div className="max-w-[1320px] mx-auto px-6 mt-28">
       <div className="max-w-full mx-auto text-center shadow-md p-4 my-4 bg-white rounded-sm ">
         <p className="text-start font-bold mb-0">Deals in</p>
         <div className="mt-4 flex items-center">
