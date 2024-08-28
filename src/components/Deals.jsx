@@ -50,22 +50,25 @@ const Deals = () => {
 
   return (
     <div className="max-w-[1320px] mx-auto px-6 mt-28">
-      <div className="max-w-full mx-auto text-center shadow-md p-4 my-4 bg-white rounded-sm ">
+      <div className="max-w-full mx-auto text-center shadow-md p-4 my-4 bg-white rounded-sm overflow-auto">
         <p className="text-start font-bold mb-0">Deals in</p>
         <div className="mt-4 flex items-center">
           <Slider {...settingsToRight} className="slider">
-            {Logodata.map((logo, index) => (<>
-              <div
-                key={index}
-                className="flex flex-col  justify-center items-center min-w-[186px] max-w-[186px] min-h-[86px] max-h-[86px]  shadow-xl mb-4  bg-white border mx-2 rounded-md"
-              >
-                <img
-                  src={logo.image}
-                  alt={`partner-logo-${index}`}
-                  className="mx-auto max-w-[135px] max-h-[35px] min-w-[135px] min-h-[35px] object-contain "
-                />
-                 <p className="mb-0 mt-2 text-sm text-[#130f268a]">{logo.name}</p>
-              </div>
+            {Logodata.map((logo, index) => (
+              <>
+                <div
+                  key={index}
+                  className="flex flex-col  justify-center items-center min-w-[186px] max-w-[186px] min-h-[86px] max-h-[86px]  shadow-xl mb-4  bg-white border mx-2 rounded-md"
+                >
+                  <img
+                    src={logo.image}
+                    alt={`partner-logo-${index}`}
+                    className="mx-auto max-w-[135px] max-h-[35px] min-w-[135px] min-h-[35px] object-contain "
+                  />
+                  <p className="mb-0 mt-2 text-sm text-[#130f268a]">
+                    {logo.name}
+                  </p>
+                </div>
               </>
             ))}
           </Slider>
