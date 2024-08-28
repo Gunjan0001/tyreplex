@@ -1,19 +1,26 @@
 import React, { useState } from "react";
 import tyre from "../../assets/images/png/tyre.png";
 import { tyresArray } from "./Helper";
-import { SearchIcon } from "./Icon";
+import { SearchIcon, StarIcon } from "./Icon";
 
 const Tyres = () => {
-  const [visibleItems, setVisibleItems] = useState(8);
+  const initialVisibleItems = 8; // Initial number of items to show
+  const [visibleItems, setVisibleItems] = useState(initialVisibleItems);
+  const [isExpanded, setIsExpanded] = useState(false); // New state to track if items are expanded
 
   const showMoreItems = () => {
     setVisibleItems((prevVisibleItems) => prevVisibleItems + 8);
+    setIsExpanded(true); // Set to true when "View More" is clicked
+  };
+
+  const showLessItems = () => {
+    setVisibleItems(initialVisibleItems); // Reset to initial value
+    setIsExpanded(false); // Set to false when "View Less" is clicked
   };
 
   return (
     <div className="container max-w-[1320px] mx-auto px-6 mt-24">
       <div className="flex flex-col sm:flex-row justify-between">
-        {" "}
         <h2 className="text-[#130F26] text-lg font-bold mb-4">
           Tyres sold by this Dealer
         </h2>
@@ -52,7 +59,7 @@ const Tyres = () => {
             <button className="bg-red-600 text-white px-4 py-2 rounded">
               <SearchIcon />
             </button>
-          </div>{" "}
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap justify-center">
@@ -73,9 +80,9 @@ const Tyres = () => {
                   src={tyre}
                   alt="tyre"
                 />
-                <h2 className="font-extrabold  text-[#372a74] text-3xl px-2">
-                  {items.brand}
-                </h2>
+                <img className="font-extrabold max-w-[100px] min-w-[100px] min-h-[50px] max-h-[50px] object-contain text-[#372a74] text-3xl px-2"
+                  src={items.brand} alt="items" />
+               
                 <p className="text-[#130F26] px-2 text-md mt-1">
                   AMAZER 4G LIFE
                 </p>
@@ -83,8 +90,8 @@ const Tyres = () => {
                   {items.vName}
                 </p>
                 <div className="flex items-center px-2 gap-3">
-                  <div className="bg-[#4CA72C] text-white px-[5px] rounded-sm inline-flex items-center h-[15px]">
-                    4
+                  <div className="bg-[#4CA72C] text-white px-[5px] rounded-sm inline-flex items-center gap-1 h-[15px]">
+                  <StarIcon />4
                   </div>
                   <p className="mb-0 text-xs text-[#130f268a]">321 Reviews</p>
                 </div>
@@ -101,12 +108,20 @@ const Tyres = () => {
         })}
       </div>
       <div className="flex justify-center">
-        {visibleItems < tyresArray.length && (
+        {visibleItems < tyresArray.length && !isExpanded && (
           <button
             onClick={showMoreItems}
             className="font-normal text-base capitalize text-black/50 border border-black/50 rounded-md px-6 py-2.5 mt-4"
           >
-            view more
+            View More
+          </button>
+        )}
+        {isExpanded && (
+          <button
+            onClick={showLessItems}
+            className="font-normal text-base capitalize text-black/50 border border-black/50 rounded-md px-6 py-2.5 mt-4"
+          >
+            View Less
           </button>
         )}
       </div>
@@ -115,3 +130,4 @@ const Tyres = () => {
 };
 
 export default Tyres;
+
