@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Payment from "./components/Payment";
 import Hero from "./components/Hero";
+import Reviews from "./components/Reviews";
 function App() {
   const [preload, setpreload] = useState(true);
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       <div className="bg-[#f8f8fa] overflow-hidden">
         <Header />
         <Hero />
+        <Reviews />
         <Tyres />
         <Deals />
         <Services />

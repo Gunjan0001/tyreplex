@@ -7,6 +7,7 @@ import wheel from "../../assets/images/png/wheel.png";
 import wheelalignment from "../../assets/images/png/wheel-alignment.png";
 import road from "../../assets/images/jpeg/roadtyre.jpg";
 import parts from "../../assets/images/jpeg/parts.jpg";
+import men from "../../assets/images/png/men.png";
 export const dropdownData = [
   {
     title: "MOVIES",
@@ -314,18 +315,58 @@ export const tyresArray = [
     tubeType: "tubeless",
     warrenty: " 5 Year Warranty",
   },
-  
 ];
 export const MainData = [
   {
-   para:"Buy 2 Tyres and get 20% Off",
-   heading:"All Brands And Size Tyres",
-   bgImage: road, 
+    para: "Speed up your car with best auto parts",
+    heading: "Manufacture & Exporter Auto Parts",
+    bgImage: parts,
   },
   {
-   para:"Speed up your car with best auto parts",
-   heading:"Manufacture & Exporter Auto Parts",
-   bgImage: parts, 
+    para: "Buy 2 Tyres and get 20% Off",
+    heading: "All Brands And Size Tyres",
+    bgImage: road,
   },
-  
+];
+export const ReviewsData = [
+  {
+    image:men,
+    name: "Md Nasir",
+    para: "Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very cool. Guide as per ur budget. Highly recommend",
+  },
+  {
+    image:men,
+    name: "Rohit Bhati",
+    para: "Excellent service from start to finish. 100% satisfaction with the job, professionalism and overall service.We were delighted",
+  },
+  {
+    image:men,
+    name: "Md Nasir",
+    para: "Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very cool. Guide as per ur budget. Highly recommend",
+  },
+  {
+    image:men,
+    name: "Rohit Bhati",
+    para: "Excellent service from start to finish. 100% satisfaction with the job, professionalism and overall service.We were delighted",
+  },
+  {
+    image:men,
+    name: "Md Nasir",
+    para: "Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very cool. Guide as per ur budget. Highly recommend",
+  },
+  {
+    image:men,
+    name: "Rohit Bhati",
+    para: "Excellent service from start to finish. 100% satisfaction with the job, professionalism and overall service.We were delighted",
+  },
+  {
+    image:men,
+    name: "Md Nasir",
+    para: "Went for Tyre change . Ultimate service by shoppe boys. Owner behavior very cool. Guide as per ur budget. Highly recommend",
+  },
+  {
+    image:men,
+    name: "Rohit Bhati",
+    para: "Excellent service from start to finish. 100% satisfaction with the job, professionalism and overall service.We were delighted",
+  },
 ];

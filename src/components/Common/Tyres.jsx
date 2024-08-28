@@ -74,13 +74,12 @@ const Tyres = () => {
               options={popularityOptionsArray}
               placeholder="Most Popular"
             />
-            <a
-              href="#"
+            <button
               onClick={toggleAdvancedFilters}
               className="text-sm text-blue-500 cursor-pointer mt-2"
             >
               Advanced
-            </a>
+            </button>
           </div>
 
           {/* Advanced Filter Section - Conditionally Rendered */}
