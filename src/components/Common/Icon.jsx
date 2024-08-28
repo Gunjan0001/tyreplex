@@ -103,17 +103,49 @@ export const SearchIcon = () => {
 export const StarIcon = () => {
   return (
     <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    class="w-3 h-3"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.905c.969 0 1.371 1.24.588 1.81l-3.98 2.89a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.89a1 1 0 00-1.176 0l-3.98 2.89c-.785.57-1.84-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118l-3.98-2.89c-.783-.57-.38-1.81.588-1.81h4.905a1 1 0 00.95-.69l1.519-4.674z"
+    />
+  </svg>
+  );
+};
+export const InstaIcon = () => {
+  return (
+    <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
+      width="1rem"
+      height="1rem"
       viewBox="0 0 24 24"
-      stroke="currentColor"
-      class="w-3 h-3"
     >
       <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.905c.969 0 1.371 1.24.588 1.81l-3.98 2.89a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.98-2.89a1 1 0 00-1.176 0l-3.98 2.89c-.785.57-1.84-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118l-3.98-2.89c-.783-.57-.38-1.81.588-1.81h4.905a1 1 0 00.95-.69l1.519-4.674z"
+        className="hover:fill-[#ed1c24] duration-300"
+        fill="currentColor"
+        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+      />
+    </svg>
+  );
+};
+export const FbIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1rem"
+      height="1rem"
+      viewBox="0 0 512 512"
+    >
+      <path
+        className="hover:fill-[#ed1c24] duration-300"
+        fill="currentColor"
+        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"
       />
     </svg>
   );

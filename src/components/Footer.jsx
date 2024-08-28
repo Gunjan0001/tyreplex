@@ -1,6 +1,5 @@
 import React from "react";
-import facebook from "../assets/images/png/fb-icon.png";
-import instagram from "../assets/images/png/insta-icon.png";
+import { FbIcon, InstaIcon } from "./Common/Icon";
 const Footer = () => {
   const getCurrentYear = new Date().getFullYear();
   return (
@@ -112,27 +111,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full sm:flex  items-center justify-center sm:justify-between max-w-[1320px] mx-auto px-6 pb-6">
-        <div className="flex gap-3 items-center justify-center">
-          <a
-            className="min-w-[24px] max-w-[24px] min-h-[22px] max-h-[22px] object-cover"
-            href="https://www.facebook.com/"
-          >
-            <img className="w-[15px] h-[22px]" src={facebook} alt="facebook" />
+        <div className="flex gap-2 items-center justify-center">
+          <a href="https://www.facebook.com/">
+            <InstaIcon />
           </a>
-          <a
-            className="min-w-[24px] max-w-[24px] min-h-[22px] max-h-[22px] object-cover"
-            href="https://www.instagram.com/"
-          >
-            <img
-              className="w-[17px] h-[22px]"
-              src={instagram}
-              alt="instagram"
-            />
+          <a href="https://www.instagram.com/">
+            <FbIcon />
           </a>
         </div>
         <p className="mb-0 px-4 mt-4 sm:mt-0 text-center text-xs md:text-base">
-          ©{getCurrentYear}TyrePlex Technologies & Commerce Pvt. Ltd. All Rights
-          Reserved.
+          ©{getCurrentYear} TyrePlex Technologies & Commerce Pvt. Ltd. All
+          Rights Reserved.
         </p>
       </div>
     </>
