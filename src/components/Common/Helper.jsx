@@ -5,6 +5,8 @@ import goodtyre from "../../assets/images/png/goodtyre.png";
 import bridgestone from "../../assets/images/png/bridgeStone.png";
 import wheel from "../../assets/images/png/wheel.png";
 import wheelalignment from "../../assets/images/png/wheel-alignment.png";
+import road from "../../assets/images/jpeg/roadtyre.jpg";
+import parts from "../../assets/images/jpeg/parts.jpg";
 export const dropdownData = [
   {
     title: "MOVIES",
@@ -316,18 +318,14 @@ export const tyresArray = [
 ];
 export const MainData = [
   {
-    brand: apollo,
-    prize: "₹ 3,774 ",
-    vName: "145/80 R13",
-    tubeType: "tubeless",
-    warrenty: " 5 Year Warranty",
+   para:"Buy 2 Tyres and get 20% Off",
+   heading:"All Brands And Size Tyres",
+   bgImage: road, 
   },
   {
-    brand: apollo,
-    prize: "₹ 3,774 ",
-    vName: "145/80 R13",
-    tubeType: "tubeless",
-    warrenty: " 2 Year Warranty",
+   para:"Speed up your car with best auto parts",
+   heading:"Manufacture & Exporter Auto Parts",
+   bgImage: parts, 
   },
   
 ];
