@@ -9,13 +9,21 @@ const Tyres = () => {
   const [isExpanded, setIsExpanded] = useState(false); // New state to track if items are expanded
 
   const showMoreItems = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 8);
-    setIsExpanded(true); // Set to true when "View More" is clicked
+    if (visibleItems + 8 >= tyresArray.length) {
+      setVisibleItems(tyresArray.length); // Show all items
+      setIsExpanded(true); // Set to true when all items are visible
+    } else {
+      setVisibleItems((prevVisibleItems) => prevVisibleItems + 8); // Show more items
+    }
   };
 
   const showLessItems = () => {
-    setVisibleItems(initialVisibleItems); // Reset to initial value
-    setIsExpanded(false); // Set to false when "View Less" is clicked
+    if (visibleItems - 8 <= initialVisibleItems) {
+      setVisibleItems(initialVisibleItems); // Reset to initial value
+      setIsExpanded(false); // Set to false when back to initial view
+    } else {
+      setVisibleItems((prevVisibleItems) => prevVisibleItems - 8); // Show fewer items
+    }
   };
 
   return (
@@ -108,15 +116,16 @@ const Tyres = () => {
         })}
       </div>
       <div className="flex justify-center">
-        {visibleItems < tyresArray.length && !isExpanded && (
-          <button
-            onClick={showMoreItems}
-            className="font-normal text-base capitalize text-black/50 border border-black/50 rounded-md px-6 py-2.5 mt-4"
-          >
-            View More
-          </button>
-        )}
-        {isExpanded && (
+        {!isExpanded ? (
+          visibleItems < tyresArray.length && (
+            <button
+              onClick={showMoreItems}
+              className="font-normal text-base capitalize text-black/50 border border-black/50 rounded-md px-6 py-2.5 mt-4"
+            >
+              View More
+            </button>
+          )
+        ) : (
           <button
             onClick={showLessItems}
             className="font-normal text-base capitalize text-black/50 border border-black/50 rounded-md px-6 py-2.5 mt-4"
@@ -130,4 +139,3 @@ const Tyres = () => {
 };
 
 export default Tyres;
-

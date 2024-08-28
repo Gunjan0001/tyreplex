@@ -312,4 +312,5 @@ export const tyresArray = [
     tubeType: "tubeless",
     warrenty: " 5 Year Warranty",
   },
+  
 ];
