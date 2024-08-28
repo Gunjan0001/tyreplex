@@ -314,3 +314,20 @@ export const tyresArray = [
   },
   
 ];
+export const MainData = [
+  {
+    brand: apollo,
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
+  {
+    brand: apollo,
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 2 Year Warranty",
+  },
+  
+];

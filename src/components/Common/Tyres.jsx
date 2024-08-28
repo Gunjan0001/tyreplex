@@ -8,12 +8,22 @@ const Tyres = () => {
   const initialVisibleItems = 8; // Initial number of items to show
   const [visibleItems, setVisibleItems] = useState(initialVisibleItems);
   const [isExpanded, setIsExpanded] = useState(false); // New state to track if items are expanded
+  const [showAdvancedFilters, setShowAdvancedFilters] = useState(false); // State to track visibility of advanced filters
   const [searchQuery, setSearchQuery] = useState(""); // State to track search input
 
-  // Filter function to filter dropdown options based on search query
+  // State for filter options
+  const [selectedCar, setSelectedCar] = useState("");
+  const [selectedBrand, setSelectedBrand] = useState("");
+  const [selectedModel, setSelectedModel] = useState("");
+  const [selectedVariant, setSelectedVariant] = useState("");
 
+  // Options arrays for filter dropdowns
   const filterOptionsArray = ["apollo", "Ceat"];
   const popularityOptionsArray = ["apollo", "Ceat"];
+  const carOptionsArray = ["Car", "Bike", "Scooter"];
+  const brandOptionsArray = ["Hero", "Honda", "TVS", "Bajaj"];
+  const modelOptionsArray = ["Duet", "Pleasure Plus", "Model Z"];
+  const variantOptionsArray = ["Drum", "Disc"];
 
   const showMoreItems = () => {
     if (visibleItems + 8 >= tyresArray.length) {
@@ -33,6 +43,20 @@ const Tyres = () => {
     }
   };
 
+  const toggleAdvancedFilters = () => {
+    setShowAdvancedFilters(!showAdvancedFilters); // Toggle advanced filters visibility
+  };
+
+  // Filter tyres based on selected options
+  const filteredTyres = tyresArray.filter((tyre) => {
+    return (
+      (selectedCar === "" || tyre.carType === selectedCar) &&
+      (selectedBrand === "" || tyre.brand === selectedBrand) &&
+      (selectedModel === "" || tyre.model === selectedModel) &&
+      (selectedVariant === "" || tyre.variant === selectedVariant)
+    );
+  });
+
   return (
     <div className="container max-w-[1320px] mx-auto px-6 mt-24">
       <div className="flex flex-col sm:flex-row justify-between">
@@ -41,7 +65,7 @@ const Tyres = () => {
         </h2>
         {/* Filter Section */}
         <div className="flex flex-col sm:items-center justify-between mb-6 gap-5">
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row gap-3 lg:ml-auto">
             <FilterDropdown
               options={filterOptionsArray}
               placeholder="Filter By"
@@ -50,31 +74,50 @@ const Tyres = () => {
               options={popularityOptionsArray}
               placeholder="Most Popular"
             />
-            <a href="/" className="text-sm text-gray-500">
+            <a
+              href="#"
+              onClick={toggleAdvancedFilters}
+              className="text-sm text-blue-500 cursor-pointer mt-2"
+            >
               Advanced
             </a>
           </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <button className="border border-gray-300 rounded px-2 py-1 text-sm">
-              Car
-            </button>
-            <button className="border border-gray-300 rounded px-2 py-1 text-sm">
-              Choose Brand
-            </button>
-            <button className="border border-gray-300 rounded px-2 py-1 text-sm">
-              Choose Model
-            </button>
-            <button className="border border-gray-300 rounded px-2 py-1 text-sm">
-              Choose Variant
-            </button>
-            <button className="bg-red-600 text-white px-4 py-2 rounded">
-              <SearchIcon />
-            </button>
-          </div>
+
+          {/* Advanced Filter Section - Conditionally Rendered */}
+          {showAdvancedFilters && (
+            <div className="flex flex-wrap items-center gap-3">
+              <FilterDropdown
+                className="w-[96px]"
+                options={carOptionsArray}
+                placeholder="Car"
+                onChange={setSelectedCar}
+              />
+              <FilterDropdown
+                options={brandOptionsArray}
+                placeholder="Choose Brand"
+                onChange={setSelectedBrand}
+              />
+              <FilterDropdown
+                options={modelOptionsArray}
+                placeholder="Choose Model"
+                onChange={setSelectedModel}
+              />
+              <FilterDropdown
+                options={variantOptionsArray}
+                placeholder="Choose Variant"
+                onChange={setSelectedVariant}
+              />
+              <button className="bg-red-600 text-white px-4 py-2 rounded">
+                <SearchIcon />
+              </button>
+            </div>
+          )}
         </div>
       </div>
-      <div className="flex flex-wrap justify-center">
-        {tyresArray.slice(0, visibleItems).map((items, index) => {
+
+      {/* Tyre Cards */}
+      <div className="flex flex-wrap justify-center cursor-pointer">
+        {filteredTyres.slice(0, visibleItems).map((items, index) => {
           return (
             <div
               key={index}
@@ -121,9 +164,11 @@ const Tyres = () => {
           );
         })}
       </div>
+
+      {/* Show More/Less Buttons */}
       <div className="flex justify-center">
         {!isExpanded ? (
-          visibleItems < tyresArray.length && (
+          visibleItems < filteredTyres.length && (
             <button
               onClick={showMoreItems}
               className="font-normal text-base capitalize text-black/50 border border-black/50 rounded-md px-6 py-2.5 mt-4"
