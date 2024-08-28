@@ -47,6 +47,11 @@
   color: #ed1c24 !important;
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: -1px !important;
+}
 
 .slick-dots li {
-  margin: 0 !important;}
+  margin: 0 !important;
+}

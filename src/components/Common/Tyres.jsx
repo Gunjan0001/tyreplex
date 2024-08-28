@@ -26,11 +26,11 @@ const Tyres = () => {
     ],
   };
   return (
-    <div className="container mx-auto mt-4">
+    <div className="container mx-auto mt-4 py-6">
       <Slider {...settings}>
         {tyresArray.map((items, index) => {
           return (
-            <div className=" w-full px-3">
+            <div className=" w-full px-3 py-6">
               <div className="border-0 mb-4 relative hover:shadow-2xl duration-300 shadow-md rounded-md bg-white overflow-hidden">
                 <div className="flex items-end justify-end absolute end-0 top-0">
                   <p className="flex items-center justify-end bg-[#efe775] text-sm rounded-sm px-1 before:bg-contain before:bg-center before:mr-1 before:w-[13px] before:h-[16px] before:content-[''] before:bg-warranty">
