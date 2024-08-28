@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import tyre from "../../assets/images/png/tyre.png";
 import { tyresArray } from "./Helper";
 import { SearchIcon, StarIcon } from "./Icon";
+import { FilterDropdown } from "../FilterDropdown";
 
 const Tyres = () => {
   const initialVisibleItems = 8; // Initial number of items to show
   const [visibleItems, setVisibleItems] = useState(initialVisibleItems);
   const [isExpanded, setIsExpanded] = useState(false); // New state to track if items are expanded
+  const [searchQuery, setSearchQuery] = useState(""); // State to track search input
+
+  // Filter function to filter dropdown options based on search query
+
+  const filterOptionsArray = ["apollo", "Ceat"];
+  const popularityOptionsArray = ["apollo", "Ceat"];
 
   const showMoreItems = () => {
     if (visibleItems + 8 >= tyresArray.length) {
@@ -34,19 +41,15 @@ const Tyres = () => {
         </h2>
         {/* Filter Section */}
         <div className="flex flex-col sm:items-center justify-between mb-6 gap-5">
-          <div className="flex items-center gap-3">
-            <select className="border border-gray-300 rounded px-2 py-1 text-sm  sm:w-[200px]">
-              <option>Filter By</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-            </select>
-
-            <select className="border border-gray-300 rounded px-2 py-1 text-sm  sm:w-[200px]">
-              <option>Most Popular</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-            </select>
-
+          <div className="flex flex-col sm:flex-row gap-3">
+            <FilterDropdown
+              options={filterOptionsArray}
+              placeholder="Filter By"
+            />
+            <FilterDropdown
+              options={popularityOptionsArray}
+              placeholder="Most Popular"
+            />
             <a href="/" className="text-sm text-gray-500">
               Advanced
             </a>
@@ -88,9 +91,12 @@ const Tyres = () => {
                   src={tyre}
                   alt="tyre"
                 />
-                <img className="font-extrabold max-w-[100px] min-w-[100px] min-h-[50px] max-h-[50px] object-contain text-[#372a74] text-3xl px-2"
-                  src={items.brand} alt="items" />
-               
+                <img
+                  className="font-extrabold max-w-[100px] min-w-[100px] min-h-[50px] max-h-[50px] object-contain text-[#372a74] text-3xl px-2"
+                  src={items.brand}
+                  alt="items"
+                />
+
                 <p className="text-[#130F26] px-2 text-md mt-1">
                   AMAZER 4G LIFE
                 </p>
@@ -99,7 +105,7 @@ const Tyres = () => {
                 </p>
                 <div className="flex items-center px-2 gap-3">
                   <div className="bg-[#4CA72C] text-white px-[5px] rounded-sm inline-flex items-center gap-1 h-[15px]">
-                  <StarIcon />4
+                    <StarIcon />4
                   </div>
                   <p className="mb-0 text-xs text-[#130f268a]">321 Reviews</p>
                 </div>
