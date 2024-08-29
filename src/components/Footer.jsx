@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 xl:w-1/3 lg:border-r-2 lg:px-4">
             <h2 className="font-bold lg:text-lg mt-5 lg:mt-0 ">CONTACT INFO</h2>
             <ul className="ps-0 mt-4 flex flex-col gap-3">
-              <li className=" text-xs  md:text-base text-gray-600">
+              <li className=" text-xs lg:text-base text-gray-600">
                 <span className="text-base lg:text-lg me-2 text-black font-semibold">
                   Address:
                 </span>
@@ -29,7 +29,7 @@ const Footer = () => {
                 Tyreplex@gmail.com
               </li>
               <li className="flex ">
-                <button className="border border-[#ed1c24] text-[#ed1c24] md:text-base  rounded-[3px] px-2 py-[6px] mt-4 lg:mt-7">
+                <button className="border border-[#ed1c24] text-[#ed1c24] md:text-base  rounded-md px-2 py-[6px] sm:mt-4 lg:mt-7 hover:bg-[#ed1c24] hover:text-white duration-300">
                   Get Directions
                 </button>
               </li>
@@ -42,48 +42,79 @@ const Footer = () => {
                   PRODUCTS
                 </h2>
                 <ul className="ps-0 mt-4 flex flex-col gap-3 ">
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Prices Drop
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Prices Drop
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    New Products
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      New Products
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Best Sales
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Best Sales
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Contact us
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Contact us
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Sitemap
+                  <li>
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Sitemap
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Stores
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Stores
+                    </span>
                   </li>
                 </ul>
               </div>
-              <div className="w-1/2 lg:border-r-2 px-4 ">
+              <div className="w-1/2 lg:border-r-2 sm:px-4 ">
                 <h2 className="font-bold text-sm lg:text-lg mt-5 lg:mt-0 ">
                   OUR COMPANY
                 </h2>
                 <ul className="ps-0 mt-4 flex flex-col gap-3  ">
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Delivery
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Delivery
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Terms and Conditions
+                  <li>
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Terms and Conditions
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    About Us
+                  <li>
+                    {" "}
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      About Us
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Secure Payment
+                  <li>
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Secure Payment
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Shipping{" "}
+                  <li>
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Shipping{" "}
+                    </span>
                   </li>
-                  <li className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
-                    Stores
+                  <li>
+                    <span className=" cursor-pointer hover:text-[#ed1c24] transition-all ease-out duration-300 text-xs md:text-base text-gray-600">
+                      Stores
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -102,7 +133,7 @@ const Footer = () => {
                   type="text"
                   placeholder="Ask or search your question"
                 />
-                <button className="border text-xs border-[#ed1c24] px-2 rounded-sm text-[#ed1c24] py-1">
+                <button className="border text-xs border-[#ed1c24] px-2 rounded-md text-[#ed1c24] py-1 hover:bg-[#ed1c24] hover:text-white duration-300">
                   Send
                 </button>
               </li>

@@ -20,10 +20,12 @@ const Payment = () => {
       </ul>
       <div className="max-w-full mx-auto text-center shadow-md p-4 mt-7 mb-4 bg-white rounded-sm ">
         <p className="text-start font-bold mb-0">Payment Mode</p>
-        <div className="flex flex-wrap items-center gap-1    sm:gap-5">
+        <div className="flex flex-wrap items-center gap-1 sm:gap-5">
           <div className="flex items-center gap-2 sm:gap-3 mt-3">
             <RightTickIcon />
-            <p className="mb-0 text-xs sm:text-sm text-[#130f26]">Deposit to Account</p>
+            <p className="mb-0 text-xs sm:text-sm text-[#130f26]">
+              Deposit to Account
+            </p>
           </div>
           <div className="flex items-center gap-2 sm:gap-3 mt-3">
             <RightTickIcon />
@@ -33,17 +35,19 @@ const Payment = () => {
           </div>
           <div className="flex items-center gap-2 sm:gap-3 mt-3">
             <RightTickIcon />
-            <p className="mb-0 text-xs sm:text-sm text-[#130f26]">
+            <p className="mb-0 text-start text-xs sm:text-sm text-[#130f26]">
               Wallets(Pay TM /Phonepe/Amazon etc)
             </p>
           </div>
           <div className="flex items-center gap-2 sm:gap-3 mt-3">
             <RightTickIcon />
-            <p className="mb-0 text-xs sm:text-sm text-[#130f26]">Net Banking</p>
+            <p className="mb-0 text-xs sm:text-sm text-[#130f26]">
+              Net Banking
+            </p>
           </div>
-          <div className="flex items-center gap-2 sm:gap-3 mt-3">
+          <div className="flex items-center gap-1 sm:gap-3 mt-3  ms-2 sm:ms-0 ">
             <RightTickIcon />
-            <p className="mb-0 text-xs sm:text-sm text-[#130f26]">UPI</p>
+            <p className="mb-0 text-xs sm:text-smtext-[#130f26]">UPI</p>
           </div>
         </div>
       </div>

@@ -315,6 +315,13 @@ export const tyresArray = [
     tubeType: "tubeless",
     warrenty: " 5 Year Warranty",
   },
+  {
+    brand: ceat,
+    prize: "₹ 3,774 ",
+    vName: "145/80 R13",
+    tubeType: "tubeless",
+    warrenty: " 5 Year Warranty",
+  },
 ];
 export const MainData = [
   {

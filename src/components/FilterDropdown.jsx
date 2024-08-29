@@ -48,7 +48,7 @@ export const FilterDropdown = ({ options, placeholder }) => {
   };
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative max-[450px]:w-full" ref={dropdownRef}>
       <div
         className="border-[2px] border-gray-300 rounded text-sm w-full flex justify-between items-center"
         onClick={handleToggleDropdown}
